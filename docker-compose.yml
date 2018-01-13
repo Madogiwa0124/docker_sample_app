@@ -18,6 +18,9 @@ services:
     links:
       - db
       # - redis
+    volumes:
+      # ローカルのルートディレクトリをコンテナ上の作業ディレクトリにマウント
+      - ./:/docker_sample_app
     environment:
       DATABASE_USER: postgres
       DATABASE_PASSWORD:
