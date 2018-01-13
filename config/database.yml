@@ -1,0 +1,22 @@
+development: &default
+  adapter: postgresql
+  encoding: unicode
+  database: postgres
+  pool: 5
+  username: postgres
+  password:
+  host: db
+
+development:
+  <<: *default
+  database: docker_sample_app_development
+
+test:
+  <<: *default
+  database: docker_sample_app_test
+
+production:
+  <<: *default
+  database: docker_sample_app_production
+  # username: docker_sample_app
+  # password: <%= ENV['appname_DATABASE_PASSWORD'] %>
