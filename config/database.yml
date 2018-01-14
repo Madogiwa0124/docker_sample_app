@@ -18,5 +18,5 @@ test:
 production:
   <<: *default
   database: docker_sample_app_production
-  # username: docker_sample_app
-  # password: <%= ENV['appname_DATABASE_PASSWORD'] %>
+  username: docker_sample_app
+  password: <%= ENV['appname_DATABASE_PASSWORD'] %>
