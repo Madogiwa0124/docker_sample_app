@@ -1,6 +1,14 @@
 # README
 DokerでRails環境を構築してみたサンプルアプリです。
 
+# 環境
+
+|環境|version|
+|:--|:--|
+|ruby|2.4.3|
+|rails|5.1.4|
+|posgresql|latest|
+
 # 使い方
 下記コマンドを実行して、`localhost:3000`にアクセスするとRailsのスタートページが表示されます。
 ```
